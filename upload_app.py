@@ -7,7 +7,7 @@ import werkzeug
 
 DIRNAME = os.path.dirname(__file__)
 UPLOAD_FOLDER = os.path.join(DIRNAME, 'uploads')
-ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png'}
+ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'svg'}
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/upload/*": {"origins": "*"}})
